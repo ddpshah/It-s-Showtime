@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="navbar bg-base-100">
+        <div class="flex-1">
+            <div class="avatar">
+                <div class="w-16 rounded">
+                    <img src="/assets/Frame 2.png" />
+                </div>
+            </div>
+            <a class="btn btn-ghost normal-case text-xl" style="color :red">It's ShowTime</a>
+        </div>
+        <div class="avatar">
+            <div class="w-8 rounded-full">
+                <img src="/assets/location.svg" />
+            </div>
+        </div>
+        <div class="dropdown dropdown-end" style="margin-right: 2%;">
+            <label tabindex="0" class="btn btn-ghost rounded-btn">Mumbai</label>
+            <ul tabindex="0" class="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 mt-4">
+                <li><a>Delhi</a></li>
+                <li><a>Ahmedabad</a></li>
+                <li><a>Bangalore</a></li>
+                <li><a>Chennai</a></li>
+                <li><a>Kolkata</a></li>
+                <li><a>Jaipur</a></li>
+                <li><a>Pune</a></li>
+            </ul>
+        </div>
+        <div class="flex-none gap-2">
+            <div class="form-control">
+                <input type="text" placeholder="Search movies, shows ..." class="input input-bordered w-24 md:w-auto" />
+            </div>
+            <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                    <div class="w-10 rounded-full">
+                        <img src="/assets/avatar.jpeg" />
+                    </div>
+                </label>
+                <ul tabindex="0"
+                    class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                    <li>
+                        <a class="justify-between">
+                            Profile
+                            <span class="badge">New</span>
+                        </a>
+                    </li>
+                    <li><a>Settings</a></li>
+                    <li><a>Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="movie-overview">
+        <div>
+            <span style="font-size: 50px">
+                JAWAN
+            </span>
+
+            <div style="font-size: 20px">
+                Duraton - 2h 49m <br>
+                Genre - Action , Thriller<br>
+                UA<br>
+                <button class="normal" style="background-color: red; border-color: red;">Book tickets</button>
+
+            </div>
+        </div>
+        <div>
+            <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/jawan-et00330424-1693892482.jpg"
+                alt="">
+        </div>
+    </div>
+
+    <div class="movie-details">
+        <div style="margin-bottom:20px;">
+            <span style="font-size: 40px">
+                About the Movie
+            </span>
+            <br>
+            <span style="font-size: 20px; margin-bottom: 20px;">
+                A high-octane action thriller that outlines the emotional journey of a man who is set to rectify the
+                wrongs in society.
+            </span>
+            </span>
+        </div>
+
+        <div class="movie-cast">
+            <span style="font-size: 40px">
+                Cast
+            </span>
+            <div class="carousel carousel-center  p-4 space-x-4 bg-neutral rounded-box">
+                <div class="carousel-item column-flex">
+                    <img src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/shah-rukh-khan-2092-12-09-2017-02-10-43.jpg"
+                        class="rounded-box" />
+                    <span>Shah Rukh Khan</span>
+                </div>
+                <div class="carousel-item column-flex">
+                    <img src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/nayanthara-5143-1675058766.jpg"
+                        class="rounded-box" />
+                    <span>Shah Rukh Khan</span>
+
+                </div>
+                <div class="carousel-item column-flex">
+                    <img src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/vijay-sethupathi-32355-16-09-2017-03-30-38.jpg"
+                        class="rounded-box" />
+                    <span>Shah Rukh Khan</span>
+
+                </div>
+                <div class="carousel-item column-flex">
+                    <img src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/sanya-malhotra-1057788-19-09-2018-12-19-26.jpg"
+                        class="rounded-box" />
+                    <span>Shah Rukh Khan</span>
+
+                </div>
+                <div class="carousel-item column-flex">
+                    <img src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/deepika-padukone-2822-12-09-2017-06-31-43.jpg"
+                        class="rounded-box" />
+                    <span>Shah Rukh Khan</span>
+
+                </div>
+                <div class="carousel-item column-flex">
+                    <img src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/sunil-grover-1055699-24-03-2017-13-54-24.jpg"
+                        class="rounded-box" />
+                    <span>Shah Rukh Khan</span>
+
+                </div>
+                <div class="carousel-item column-flex">
+                    <img src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/sanjeeta-bhattacharya-1086921-1694145507.jpg"
+                        class="rounded-box" />
+                    <span>Shah Rukh Khan</span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="movie-reviews">
+        <span style="font-size: 40px;">
+            Reviews
+            <button class="normal" style="background-color: red; border-color: red;">Rate your Experience</button>
+
+        </span>
+        <div class="reviews">
+            <div class="review-card">
+                <div class="chat chat-start">
+                    <div class="chat-image avatar">
+                        <div class="w-10 rounded-full">
+                            <img
+                                src="https://imgs.search.brave.com/Mgikm2ELCogs_oNPfkYF3wp_MLVyMzUUVDiP40t1jY0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zaG90/a2l0LmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvYmItcGx1Z2lu/L2NhY2hlL2Nvb2wt/cHJvZmlsZS1waWMt/bWF0aGV1cy1mZXJy/ZXJvLWxhbmRzY2Fw/ZS02Y2JlZWEwN2Nl/ODcwZmM1M2JlZGQ5/NDkwOTk0MWE0Yi16/eWJyYXZneDJxNDcu/anBlZw" />
+                        </div>
+                    </div>
+                    <div class="chat-header">
+                        Obi-Wan Kenobi
+                        <time class="text-xs opacity-50">12:45</time>
+                    </div>
+                    <div class="chat-bubble">You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="chat chat-start">
+                    <div class="chat-image avatar">
+                        <div class="w-10 rounded-full">
+                            <img
+                                src="https://imgs.search.brave.com/Mgikm2ELCogs_oNPfkYF3wp_MLVyMzUUVDiP40t1jY0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zaG90/a2l0LmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvYmItcGx1Z2lu/L2NhY2hlL2Nvb2wt/cHJvZmlsZS1waWMt/bWF0aGV1cy1mZXJy/ZXJvLWxhbmRzY2Fw/ZS02Y2JlZWEwN2Nl/ODcwZmM1M2JlZGQ5/NDkwOTk0MWE0Yi16/eWJyYXZneDJxNDcu/anBlZw" />
+                        </div>
+                    </div>
+                    <div class="chat-header">
+                        Obi-Wan Kenobi
+                        <time class="text-xs opacity-50">12:45</time>
+                    </div>
+                    <div class="chat-bubble">You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="chat chat-start">
+                    <div class="chat-image avatar">
+                        <div class="w-10 rounded-full">
+                            <img
+                                src="https://imgs.search.brave.com/Mgikm2ELCogs_oNPfkYF3wp_MLVyMzUUVDiP40t1jY0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zaG90/a2l0LmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvYmItcGx1Z2lu/L2NhY2hlL2Nvb2wt/cHJvZmlsZS1waWMt/bWF0aGV1cy1mZXJy/ZXJvLWxhbmRzY2Fw/ZS02Y2JlZWEwN2Nl/ODcwZmM1M2JlZGQ5/NDkwOTk0MWE0Yi16/eWJyYXZneDJxNDcu/anBlZw" />
+                        </div>
+                    </div>
+                    <div class="chat-header">
+                        Obi-Wan Kenobi
+                        <time class="text-xs opacity-50">12:45</time>
+                    </div>
+                    <div class="chat-bubble">You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="chat chat-start">
+                    <div class="chat-image avatar">
+                        <div class="w-10 rounded-full">
+                            <img
+                                src="https://imgs.search.brave.com/Mgikm2ELCogs_oNPfkYF3wp_MLVyMzUUVDiP40t1jY0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zaG90/a2l0LmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvYmItcGx1Z2lu/L2NhY2hlL2Nvb2wt/cHJvZmlsZS1waWMt/bWF0aGV1cy1mZXJy/ZXJvLWxhbmRzY2Fw/ZS02Y2JlZWEwN2Nl/ODcwZmM1M2JlZGQ5/NDkwOTk0MWE0Yi16/eWJyYXZneDJxNDcu/anBlZw" />
+                        </div>
+                    </div>
+                    <div class="chat-header">
+                        Obi-Wan Kenobi
+                        <time class="text-xs opacity-50">12:45</time>
+                    </div>
+                    <div class="chat-bubble">You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                        You were the Chosen One!
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <footer class="footer p-10 bg-base-200 text-base-content">
+        <aside>
+            <img src="/assets/Frame 2.png" alt="" class="w-16 h-16 rounded" />
+            <p>It's ShowTime Ltd.<br />Entertaining people since 2023</p>
+        </aside>
+        <nav>
+            <header class="footer-title">Services</header>
+            <a class="link link-hover">Branding</a>
+            <a class="link link-hover">Design</a>
+            <a class="link link-hover">Marketing</a>
+            <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+            <header class="footer-title">Company</header>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Contact</a>
+            <a class="link link-hover">Jobs</a>
+            <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+            <header class="footer-title">Legal</header>
+            <a class="link link-hover">Terms of use</a>
+            <a class="link link-hover">Privacy policy</a>
+            <a class="link link-hover">Cookie policy</a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

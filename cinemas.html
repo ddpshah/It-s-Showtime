@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Cinemas</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="navbar bg-base-100">
+        <div class="flex-1">
+            <div class="avatar">
+                <div class="w-16 rounded">
+                    <img src="/assets/Frame 2.png" />
+                </div>
+            </div>
+            <a class="btn btn-ghost normal-case text-xl" style="color :red">It's ShowTime</a>
+        </div>
+        <div class="avatar">
+            <div class="w-8 rounded-full">
+                <img src="/assets/location.svg" />
+            </div>
+        </div>
+        <div class="dropdown dropdown-end" style="margin-right: 2%;">
+            <label tabindex="0" class="btn btn-ghost rounded-btn">Mumbai</label>
+            <ul tabindex="0" class="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 mt-4">
+                <li><a>Delhi</a></li>
+                <li><a>Ahmedabad</a></li>
+                <li><a>Bangalore</a></li>
+                <li><a>Chennai</a></li>
+                <li><a>Kolkata</a></li>
+                <li><a>Jaipur</a></li>
+                <li><a>Pune</a></li>
+            </ul>
+        </div>
+        <div class="flex-none gap-2">
+            <div class="form-control">
+                <input type="text" placeholder="Search movies, shows ..." class="input input-bordered w-24 md:w-auto" />
+            </div>
+            <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                    <div class="w-10 rounded-full">
+                        <img src="/assets/avatar.jpeg" />
+                    </div>
+                </label>
+                <ul tabindex="0"
+                    class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                    <li>
+                        <a class="justify-between">
+                            Profile
+                            <span class="badge">New</span>
+                        </a>
+                    </li>
+                    <li><a>Settings</a></li>
+                    <li><a>Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="movie-overview">
+        <div>
+            <span style="font-size: 50px">
+                JAWAN
+            </span>
+
+            <div style="font-size: 20px">
+                Duraton - 2h 49m <br>
+                Genre - Action , Thriller<br>
+                UA<br>
+
+            </div>
+        </div>
+        <div>
+            <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/jawan-et00330424-1693892482.jpg"
+                alt="">
+        </div>
+    </div>
+
+    <div style="  border-bottom: 1px dashed white;
+    margin-bottom: 20px;">
+        <div class="collapse collapse-plus bg-base-200" style="margin-bottom: 10px;">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+                G7 Multiplex: Bandra (W)
+            </div>
+            <div class="collapse-content flexrowdiv">
+                <div class="movie-timing" onclick="my_modal_3.showModal()">
+                    <p>
+                        Screen 4<br>
+                        10:00AM
+                    </p>
+                </div>
+                <div class="movie-timing" onclick="my_modal_3.showModal()">
+                    <p>
+                        Screen 4<br>
+                        10:00AM
+                    </p>
+                </div>
+                <div class="movie-timing" onclick="my_modal_3.showModal()">
+                    <p>
+                        Screen 4<br>
+                        10:00AM
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200" style="margin-bottom: 10px;">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+                Gold Cinema: Malad Malvani
+            </div>
+            <div class="collapse-content flexrowdiv">
+                <div class="movie-timing" onclick="my_modal_3.showModal()">
+                    <p>
+                        Screen 4<br>
+                        10:00AM
+                    </p>
+                </div>
+                <div class="movie-timing" onclick="my_modal_3.showModal()">
+                    <p>
+                        Screen 4<br>
+                        10:00AM
+                    </p>
+                </div>
+                <div class="movie-timing" onclick="my_modal_3.showModal()">
+                    <p>
+                        Screen 4<br>
+                        10:00AM
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200" style="margin-bottom: 10px;">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+                INOX: Thakur Mall, Dahisar
+            </div>
+            <div class="collapse-content flexrowdiv">
+                <div class="movie-timing" onclick="my_modal_3.showModal()">
+                    <p>
+                        Screen 4<br>
+                        10:00AM
+                    </p>
+                </div>
+                <div class="movie-timing" onclick="my_modal_3.showModal()">
+                    <p>
+                        Screen 4<br>
+                        10:00AM
+                    </p>
+                </div>
+                <div class="movie-timing" onclick="my_modal_3.showModal()">
+                    <p>
+                        Screen 4<br>
+                        10:00AM
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="collapse collapse-plus bg-base-200" style="margin-bottom: 10px;">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+                Maison PVR: Library Hall, Jio World Drive, BKC
+            </div>
+            <div class="collapse-content flexrowdiv">
+                <div class="movie-timing" onclick="my_modal_3.showModal()">
+                    <p>
+                        Screen 4<br>
+                        10:00AM
+                    </p>
+                </div>
+                <div class="movie-timing" onclick="my_modal_3.showModal()">
+                    <p>
+                        Screen 4<br>
+                        10:00AM
+                    </p>
+                </div>
+                <div class="movie-timing" onclick="my_modal_3.showModal()">
+                    <p>
+                        Screen 4<br>
+                        10:00AM
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- You can open the modal using ID.showModal() method -->
+    <dialog id="my_modal_3" class="modal">
+        <div class="modal-box">
+            <form method="dialog">
+                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+            </form>
+            <h3 class="font-bold text-lg">Book Now</h3>
+            <h3 class="font-bold text-lg" style="text-align: center;">All eyes here Please!</h3>
+
+            <div class="seating-arrangement">
+                <div class="cinema-seat">
+                    1
+                </div>
+                <div class="cinema-seat">
+                    2
+                </div>
+                <div class="cinema-seat">
+                    3
+                </div>
+                <div class="cinema-seat">
+                    4
+                </div>
+                <div class="cinema-seat">
+                    5
+                </div>
+                <div class="cinema-seat">
+                    6
+                </div>
+                <div class="cinema-seat">
+                    6
+                </div>
+                <div class="cinema-seat">
+                    6
+                </div>
+                <div class="cinema-seat">
+                    6
+                </div>
+                <div class="cinema-seat">
+                    6
+                </div>
+                <div class="cinema-seat">
+                    6
+                </div>
+                <div class="cinema-seat">
+                    6
+                </div>
+                <div class="cinema-seat">
+                    6
+                </div>
+            </div>
+
+            <div style="display: flex; justify-content: center;">
+                <button class="normal" style="background-color: red; border-color: red;">
+                    Confirm Tickets
+                </button>
+            </div>
+        </div>
+    </dialog>
+
+
+    <footer class="footer p-10 bg-base-200 text-base-content">
+        <aside>
+            <img src="/assets/Frame 2.png" alt="" class="w-16 h-16 rounded" />
+            <p>It's ShowTime Ltd.<br />Entertaining people since 2023</p>
+        </aside>
+        <nav>
+            <header class="footer-title">Services</header>
+            <a class="link link-hover">Branding</a>
+            <a class="link link-hover">Design</a>
+            <a class="link link-hover">Marketing</a>
+            <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+            <header class="footer-title">Company</header>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Contact</a>
+            <a class="link link-hover">Jobs</a>
+            <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+            <header class="footer-title">Legal</header>
+            <a class="link link-hover">Terms of use</a>
+            <a class="link link-hover">Privacy policy</a>
+            <a class="link link-hover">Cookie policy</a>
+        </nav>
+    </footer>
+</body>
+
+</html>
