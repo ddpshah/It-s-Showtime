@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="navbar bg-base-100">
+            <div class="flex-1">
+                <div class="avatar">
+                    <div class="w-16 rounded">
+                      <img src="/assets/Frame 2.png" />
+                    </div>
+                  </div>
+              <a class="btn btn-ghost normal-case text-xl" style="color :red">It's ShowTime</a>
+            </div>
+            <div class="avatar">
+                <div class="w-8 rounded-full">
+                  <img src="/assets/location.svg" />
+                </div>
+              </div>
+            <div class="dropdown dropdown-end" style="margin-right: 2%;">
+                <label tabindex="0" class="btn btn-ghost rounded-btn">Mumbai</label>
+                <ul tabindex="0" class="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 mt-4">
+                  <li><a>Delhi</a></li> 
+                  <li><a>Ahmedabad</a></li>
+                  <li><a>Bangalore</a></li>
+                  <li><a>Chennai</a></li>
+                  <li><a>Kolkata</a></li>
+                  <li><a>Jaipur</a></li>
+                  <li><a>Pune</a></li>
+                </ul>
+              </div>
+            <div class="flex-none gap-2">
+              <div class="form-control">
+                <input type="text" placeholder="Search movies, shows ..." class="input input-bordered w-24 md:w-auto" />
+              </div>
+              <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                  <div class="w-10 rounded-full">
+                    <img src="/assets/avatar.jpeg" />
+                  </div>
+                </label>
+                <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                  <li>
+                    <a class="justify-between">
+                      Profile
+                      <span class="badge">New</span>
+                    </a>
+                  </li>
+                  <li><a>Settings</a></li>
+                  <li><a>Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero min-h-screen" style="background-image: url(assets/Rectangle.png);">
+            <div class="hero-overlay bg-opacity-90"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">John Wick</h1>
+                <p class="mb-5">Legendary assassin John Wick (Keanu Reeves) retired from his violent career after marrying the love of his life. Her sudden death leaves John in deep mourning.</p>
+                <button class="normal" style="background-color: red; border-color: red;">Book tickets</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+        
+
+
+
+
+          <footer class="footer p-10 bg-base-200 text-base-content">
+            <aside>
+              <img src="/assets/Frame 2.png" alt="" class="w-16 h-16 rounded" />
+              <p>It's ShowTime Ltd.<br/>Entertaining people since 2023</p>
+            </aside> 
+            <nav>
+              <header class="footer-title">Services</header> 
+              <a class="link link-hover">Branding</a> 
+              <a class="link link-hover">Design</a> 
+              <a class="link link-hover">Marketing</a> 
+              <a class="link link-hover">Advertisement</a>
+            </nav> 
+            <nav>
+              <header class="footer-title">Company</header> 
+              <a class="link link-hover">About us</a> 
+              <a class="link link-hover">Contact</a> 
+              <a class="link link-hover">Jobs</a> 
+              <a class="link link-hover">Press kit</a>
+            </nav> 
+            <nav>
+              <header class="footer-title">Legal</header> 
+              <a class="link link-hover">Terms of use</a> 
+              <a class="link link-hover">Privacy policy</a> 
+              <a class="link link-hover">Cookie policy</a>
+            </nav>
+          </footer>
+        <script src="" async defer></script>
+    </body>
+</html>
