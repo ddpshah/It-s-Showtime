@@ -91,6 +91,18 @@ button.primary {
   transition: 0.2s;
 }
 
+.stats {
+  border: 5px solid;
+  display: flex;
+
+  margin: auto;
+  margin-bottom: 5%;
+  width: 50%;
+  padding: 10px;
+  text-align: center
+}
+
+
 /* movie detail page css */
 .movie-overview {
   padding: 20px;
@@ -166,6 +178,7 @@ button.primary {
   display: flex;
   flex-direction: row;
 }
+
 /* This css class is for cards carousel which are in horizontal scroll */
 .carousel-container {
   display: flex;
@@ -180,9 +193,27 @@ button.primary {
 
 /* movie detail page css ends here */
 
+
+.show-desktop {
+  display: block;
+}
+
 /* responsive css just add here */
 @media screen and (max-width: 468px) {
   /* Your CSS rules for screens with a maximum width of 468px or less go here */
+
+  .show-desktop {
+    display: none;
+  }
+
+  .stats{
+    width: fit-content;
+  }
+
+
+  .margin-bottom-mobile{
+    margin-bottom: 20px;
+  }
 
   .movie-overview {
     flex-direction: column-reverse;
