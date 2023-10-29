@@ -107,7 +107,8 @@ button.primary {
   padding: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: flex-start;
   border-bottom: 1px dashed white;
   margin-bottom: 20px;
 }
@@ -176,6 +177,11 @@ button.primary {
 .flexrowdiv {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flexrowdiv div {
+  margin-bottom: 10px;
 }
 
 /* This css class is for cards carousel which are in horizontal scroll */
@@ -198,6 +204,8 @@ button.primary {
 /* Modify the appearance when the checkbox is checked (active state) */
 .checkbox-primary:checked {
   background-color: red !important;
+  border-color: red !important;
+
 }
 
 .checkbox-primary-head {
@@ -214,7 +222,7 @@ button.primary {
 /* movie detail page css ends here */
 
 .show-desktop {
-  display: block;
+  display: flex;
 }
 
 .search {
@@ -222,11 +230,12 @@ button.primary {
   flex-direction: row;
   margin-left: 2%;
 }
-.search-filter-width{
+
+.search-filter-width {
   width: 20%;
 }
 
-.search-movie-width{
+.search-movie-width {
   width: 80%;
 }
 
@@ -235,6 +244,11 @@ button.primary {
 /* responsive css just add here */
 @media screen and (max-width: 468px) {
   /* Your CSS rules for screens with a maximum width of 468px or less go here */
+
+
+  .center-mobile {
+    justify-content: center;
+  }
 
   .show-desktop {
     display: none;
@@ -260,11 +274,33 @@ button.primary {
     margin-left: 2%;
   }
 
-  .search-filter-width{
+  .search-filter-width {
     width: 90%;
   }
-  
-  .search-movie-width{
+
+  .search-movie-width {
     width: 90%;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .search {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+  }
+
+  .search-filter-width {
+    width: 90%;
+  }
+
+  .search-movie-width {
+    width: 90%;
+  }
+
+  .center-mobile {
+    justify-content: center;
   }
 }
