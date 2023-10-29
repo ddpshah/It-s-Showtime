@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,500;0,700;0,900;1,300;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,500;0,700;0,900;1,300;1,500;1,700;1,900&display=swap");
 
 * {
   margin: 0;
@@ -99,9 +99,8 @@ button.primary {
   margin-bottom: 5%;
   width: 50%;
   padding: 10px;
-  text-align: center
+  text-align: center;
 }
-
 
 /* movie detail page css */
 .movie-overview {
@@ -190,13 +189,48 @@ button.primary {
   margin-bottom: 5%;
 }
 
+.checkbox-primary {
+  border-color: red;
+  margin-bottom: 4%;
+  margin-right: 2%;
+}
+
+/* Modify the appearance when the checkbox is checked (active state) */
+.checkbox-primary:checked {
+  background-color: red !important;
+}
+
+.checkbox-primary-head {
+  margin-bottom: 1%;
+  margin-right: 1%;
+}
+
+/* Modify the appearance when the checkbox is checked (active state) */
+.checkbox-primary-head:checked {
+  background-color: red !important;
+  border-color: transparent !important;
+}
 
 /* movie detail page css ends here */
-
 
 .show-desktop {
   display: block;
 }
+
+.search {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2%;
+}
+.search-filter-width{
+  width: 20%;
+}
+
+.search-movie-width{
+  width: 80%;
+}
+
+
 
 /* responsive css just add here */
 @media screen and (max-width: 468px) {
@@ -206,12 +240,11 @@ button.primary {
     display: none;
   }
 
-  .stats{
+  .stats {
     width: fit-content;
   }
 
-
-  .margin-bottom-mobile{
+  .margin-bottom-mobile {
     margin-bottom: 20px;
   }
 
@@ -219,5 +252,19 @@ button.primary {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+  }
+
+  .search {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+  }
+
+  .search-filter-width{
+    width: 90%;
+  }
+  
+  .search-movie-width{
+    width: 90%;
   }
 }
